@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Statistiky</title>
+    <link rel="stylesheet" href="statistics.css">
+</head>
+<body>
+    <header>
+        <h1>Statistiky her</h1>
+    </header>
+    
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Přežití (s)</th>
+                    <th>Zabití</th>
+                    <th>Dosažený Level</th>
+                    <th>Schopnosti</th>
+                </tr>
+            </thead>
+            <tbody id="statTableBody"></tbody>
+        </table>
+
+        <h2>Graf zabitých nepřátel</h2>
+        <svg id="chart" width="600" height="250"></svg>
+
+        <div class="button-container">
+            <button id="backBtn">Zpět do menu</button>
+        </div>
+    </main>
+
+    <script src="statistics.js"></script>
+</body>
+</html>

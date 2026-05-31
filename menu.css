@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #131111;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 50px;
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: scale(0.8); 
+    }
+    to { 
+        opacity: 1; 
+        transform: scale(1);
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-left: 700px;
+    color: white;
+}
+
+form {
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    margin-left: 600px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #df0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+nav form:nth-child(odd) button {
+    border-left: 5px solid #ff7b7b;
+}
+
+nav form:nth-child(even) button {
+    border-right: 5px solid #ff7b7b;
+}
+
+nav form:nth-child(odd) button:hover {
+    background-color: #760000;
+    transform: translateX(10px);
+}
+
+nav form:nth-child(even) button:hover {
+    background-color: #760000;
+    transform: translateX(-10px);
+}
