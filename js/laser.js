@@ -92,7 +92,7 @@ export class Laser {
 
                                 if (enemy.HP <= 0) {
                                     enemy.exists = false;
-                                    player.MP += 200;
+                                    player.MP += 20;
                                     player.killCount += 1;
 
                                     if (player.MP >= player.maxMp) {
